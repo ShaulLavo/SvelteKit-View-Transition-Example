@@ -1,0 +1,7 @@
+::view-transition-old(*),
+::view-transition-new(*) ,
+::view-transition-group(*){
+	animation-duration: 0.8s ;
+	/* animation-fill-mode: none; */
+}
+
