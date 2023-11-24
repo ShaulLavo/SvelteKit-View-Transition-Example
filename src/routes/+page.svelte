@@ -3,6 +3,7 @@
 	import { images } from '$lib/contacts';
 </script>
 
+<h1>Cheeky Chronicles: A Cavalcade of Quirky Narratives</h1>
 <div class="container">
 	{#each articles as { title, subtitle, slug }, i}
 		<a href={'/' + slug} class="card">
@@ -55,7 +56,11 @@
 		}
 
 		&:hover {
-			box-shadow: #959da533 0px 8px 24px;
+			box-shadow:
+				0 1px 1px 0px #0000004d,
+				0 2px 4px 0 #80808099,
+				inset 0 1px 1px 0px #ffffff4d,
+				inset 0 2px 4px 0 #c0c0c080;
 		}
 	}
 </style>

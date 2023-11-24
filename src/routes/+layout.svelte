@@ -5,7 +5,6 @@
 
 	onNavigate((navigation) => {
 		//@ts-ignore
-
 		if (!document.startViewTransition) {
 			alert(
 				'Your browser does not support the advanced transition features used on this page. As a result, some animations will not be displayed. Please consider using a browser that supports these features for the best experience.'
@@ -23,3 +22,6 @@
 </script>
 
 <slot />
+
+<style>
+</style>

@@ -17,15 +17,13 @@
 
 <style>
 	img {
-		/* object-fit: contain; */
-		/* max-width: 80%; */
 		height: 50vh;
 		view-transition-name: var(--image);
 	}
 	header {
 		& h1 {
 			font-size: 3rem;
-			line-height: 2rem;
+			line-height: 3rem;
 			view-transition-name: var(--title);
 		}
 		& p {
@@ -33,6 +31,11 @@
 			line-height: 0.1rem;
 			text-align: center;
 			view-transition-name: var(--subtitle);
+		}
+	}
+	section {
+		& p {
+			text-align: center;
 		}
 	}
 
