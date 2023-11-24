@@ -6,7 +6,7 @@
 <h1>Cheeky Chronicles: A Cavalcade of Quirky Narratives</h1>
 <div class="container">
 	{#each articles as { title, subtitle, slug }, i}
-		<a href={'/' + slug} class="card">
+		<a href={'/' + slug} class="card" style:--card="card-{slug}">
 			<h1 style:--title="title-{slug}">{title}</h1>
 			<img style:--image="image-{slug}" src={images[i]} alt={title} />
 			<p style:--subtitle="subtitle-{slug}">{subtitle}</p>
@@ -25,18 +25,17 @@
 	.card {
 		text-decoration: none;
 		color: inherit;
-		border: 1px solid #e2e8f0;
 		padding-inline: 20px;
 		padding-block: 10px;
-		border-radius: 10px;
-		background-color: #f2f4f6;
-		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		height: auto;
 		max-width: 100%;
+		border-radius: 10px;
+
+		view-transition-name: var(--card);
 
 		& img {
 			width: 100%;
@@ -46,21 +45,21 @@
 		}
 
 		& h1 {
-			view-transition-name: var(--title);
+			/* view-transition-name: var(--title); */
 			z-index: 10;
 			position: relative;
 		}
 
 		& p {
-			view-transition-name: var(--subtitle);
+			/* view-transition-name: var(--subtitle); */
 		}
 
 		&:hover {
 			box-shadow:
 				0 1px 1px 0px #0000004d,
 				0 2px 4px 0 #80808099,
-				inset 0 1px 1px 0px #ffffff4d,
-				inset 0 2px 4px 0 #c0c0c080;
+				0 1px 1px 0px #ffffff4d,
+				0 2px 4px 0 #c0c0c080;
 		}
 	}
 </style>
