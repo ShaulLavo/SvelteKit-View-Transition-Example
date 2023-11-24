@@ -1,14 +1,14 @@
-import { getHighQualityUrl } from "./cloudinary";
+import { getHighQualityUrl } from './cloudinary';
 
 export const imageNames = [
-	'manga-samurai_cxxzj0',
-	'manga-tree-girl_uvto83',
-	'manga-snow-girl_rsqiey',
-	'manga-coffee-shop_bspkzw',
-	'manga-river-2_tdgoe9',
+	'fun-4_buehlx',
 	'bad-apple_cezkac',
-	'manga-show_spq88z',
-	'manga-vilage_qcipuc',
+	'fun-5_n7uxur',
+	'fun-2_vpjr5q',
+	'fun-3_i7yg3c',
+	'maple-wide_zinvwn',
+	'fun-1_r2dx5e',
+	'manga-snow-girl_rsqiey',
 	'manga-multiple_qcyjji',
 	'manga-river-1_we626p',
 	'manga-luffy_adewqx',
@@ -21,7 +21,6 @@ export const imageNames = [
 ] as const;
 
 export const images = imageNames.map((name) => getHighQualityUrl(name));
-
 
 export function titleToSlug(title: string) {
 	return title

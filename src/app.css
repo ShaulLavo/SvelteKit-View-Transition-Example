@@ -15,4 +15,8 @@
 	}
 	body {
 		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+		max-width: 1600px;
+		margin: 0 auto;
+		padding: clamp(10px, 5vw, 40px);
 	}
+

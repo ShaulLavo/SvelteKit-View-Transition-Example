@@ -17,7 +17,7 @@
 <style>
 	.container {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 		grid-gap: 20px;
 		width: 100%;
 	}
@@ -29,7 +29,7 @@
 		padding-inline: 20px;
 		padding-block: 10px;
 		border-radius: 10px;
-		background-color: #f8f6f5;
+		background-color: #f2f4f6;
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 		display: flex;
 		flex-direction: column;
