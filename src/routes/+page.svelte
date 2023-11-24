@@ -54,12 +54,12 @@
 			/* view-transition-name: var(--subtitle); */
 		}
 
-		&:hover {
+		/* &:hover {
 			box-shadow:
 				0 1px 1px 0px #0000004d,
 				0 2px 4px 0 #80808099,
 				0 1px 1px 0px #ffffff4d,
 				0 2px 4px 0 #c0c0c080;
-		}
+		} */
 	}
 </style>
