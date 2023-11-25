@@ -2,13 +2,12 @@
 @import '@fontsource/cinzel';
 
 ::view-transition-old(*),
-::view-transition-new(*) {
+::view-transition-new(*), 
+::view-transition-group(*){
 	animation-duration: 0.4s ;
 
 }
-::view-transition-group(*){
-	animation-duration: 0.6s ;
-}
+	
 
 	h1{
 		font-family: 'Cinzel', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

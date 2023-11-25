@@ -35,8 +35,6 @@
 		max-width: 100%;
 		border-radius: 10px;
 		view-transition-name: var(--card);
-		transition-property: transform;
-		transition-duration: 0.32s;
 
 		& img {
 			width: 100%;
@@ -56,6 +54,8 @@
 		}
 
 		&:hover {
+			transition-property: transform;
+			transition-duration: 0.32s;
 			transform: scale(1.05);
 		}
 	}
